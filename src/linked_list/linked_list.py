@@ -33,4 +33,5 @@ class LinkedList:
             return
         new_tail = self.tail.previous
         self.tail = new_tail
-        self.tail.next = None
+        if self.tail:
+            self.tail.next = None
